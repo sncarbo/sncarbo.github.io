@@ -1,35 +1,149 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-  <base target="_blank">
-  <meta charset="UTF-8" />
-  <title>Santiago's Portfolio</title>
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
-  <!-- remember, jQuery is completely optional -->
-  <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
-  <script type="text/javascript" src="js/jquery.particleground.js"></script>
-  <script type="text/javascript" src="js/demo.js"></script>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Santiago's Portfolio" />
+    <meta name="author" content="Santiago Carbó" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <title>Santiago's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-<body>
+  <body>
+    <div id="particles-js">
+      <div class="header">
+        <h1>
+          <span class="site-title">Santiago Carbó</span>
+          <span class="site-description">Rendering Engineer • Engine Programmer • Animation Programmer</span>
+        </h1>
+        <div class="header-icons">
+          <a target="_blank" href="https://www.linkedin.com/in/santiago-carb%C3%B3-00805510b/">
+            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://github.com/sncarbo">
+            <i class="icon fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/home">
+            <i class="icon fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100088343654119">
+            <i class="icon fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:sncarbo@outlook.com" target="_blank"
+            ><i class="icon fa fa-envelope"></i
+          ></a>
+        </div>
+        <div class="header-links">
+          <a class="link" href="#about" data-scroll>About Me</a>
+          <a class="link" href="#projects" data-scroll>Projects</a>
+        </div>
+      </div>
+      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+    <section id="about">
+      <div class="user-details">
+        <h1>My Story</h1>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="./assets/img/webp/Professional-Picture-Me.webp"
+            alt="Professional Me"
+            width="20%"
+            style="border-radius: 50%"
+          />
+          <img
+            src="./assets/img/jpg/Professional-Picture-Me.jpg"
+            alt="Professional Me"
+            width="20%"
+            style="border-radius: 50%"
+          />
+        </picture>
+        <p>
+          Hello.
+        </p>
+      </div>
 
-<div id="particles">
-  <div id="intro">
-      <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Santiago Carbo&nbsp</h2>
-        <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
-    <a href="https://www.linkedin.com/in/santiago-carb%C3%B3-00805510b/" style="color: white;"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://github.com/sncarbo" style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://twitter.com/sn_carbo" style="color: white;"><i class="fab fa-twitter" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://www.facebook.com/profile.php?id=100088343654119" style="color: white;"><i class="fab fa-facebook" style="font-size: 2em;"></i></a>
-    &nbsp
-  </div>
-</div>
+      <div class="user">
+        <div class="tech">
+          <h2>Languages and APIs</h2>
+          <i class="devicon-cplusplus-plain colored"></i>
+          <i class="devicon-c-plain colored"></i>
+          <i class="devicon-csharp-plain colored"></i>
+          <i class="devicon-python-plain colored"></i>
+          <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
+        </div>
 
-</body>
+        <div class="tech">
+          <h2>Tools</h2>
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <i class="devicon-github-plain-wordmark colored"></i>
+          <i class="devicon-visualstudio-plain colored"></i>
+          <i class="devicon-gitlab-plain-wordmark colored"></i>
+          <p>My favorite tools for version control, code editing, and container orchestration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="user-details">
+        <h1>Featured Projects</h1>
+      </div>
+
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/webp/Personal-Resume-Website.webp" alt="Personal Website" />
+            <img alt="Through the Underworld" src="./assets/img/lego.jpg" />
+          </picture>
+        </div>
+        <div class="contents" style="text-align: center">
+          <h3>Through the Underworld</h3>
+          <div>
+            <img
+              height="45"
+              width="45"
+              src="https://unpkg.com/simple-icons@3.4.0/icons/cplusplus.svg"
+            />
+            &nbsp;
+            <img
+              height="50"
+              width="50"
+              src="https://unpkg.com/simple-icons@3.4.0/icons/opengl.svg"
+            />
+            &nbsp;
+            <img
+              height="45"
+              width="45"
+              src="https://unpkg.com/simple-icons@3.4.0/icons/git.svg"
+            />
+            &nbsp;
+            <img height="45" width="45" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+          </div>
+          <p style="text-align: justify">
+            I was Rendering Engineer, Engine Programmer and Animation Programmer for this project, 
+            carried out at Horizons Games. 
+        
+            I developed several shaders to implement the Metallic Workflow, 
+            Image-Based Lightining and Area Lights. I developed the skinning system in both CPU and GPU 
+            for the animation pipeline. In addition, I developed numerous functionalities for the engine, 
+            as well as the fundamental implementation of the GameObjects and Components and 
+            other additional functionalities.
+          </p>
+          <a class="project-link" target="_blank" href="https://github.com/Horizons-Games/Axolotl-Engine/releases">
+            Latest Release
+            <i class="icon fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; Santiago Carbó, 2019</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
