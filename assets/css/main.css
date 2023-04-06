@@ -4821,12 +4821,9 @@ a img {
 }
 
 #particles-js {
-    background: #1488CC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #030020;
+    background: -webkit-linear-gradient(to right, #030020, #212447);
+    background: linear-gradient(to right, #030020, #212447);
 
     display: flex;
     vertical-align: bottom;
@@ -4847,7 +4844,6 @@ a img {
     text-align: center;
     color: #fff;
     position: absolute;
-    font-family: 'Rubik', sans-serif;
     width: 80%;
     top: 50%;
     left: 50%;
@@ -4983,6 +4979,7 @@ a img {
 }
 
 .tech {
+    max-width: 40%;
     margin: 10px
 }
 
